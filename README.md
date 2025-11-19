@@ -55,11 +55,12 @@ $$(f_0, f_1, f_2, f_3, f_4)$$
 
 2. Form a deterministic **5-cycle of pairs**:
 
-$(f_0, f_1)$  
-$(f_1, f_2)$  
-$(f_2, f_3)$  
-$(f_3, f_4)$  
-$(f_4, f_0)$
+$$(f_0, f_1)$$
+$$(f_1, f_2)$$
+$$(f_2, f_3)$$
+$$(f_3, f_4)$$
+$$(f_4, f_0)$$
+
 
 3. For each pair, build a **single 200-node instance** by:
    - taking the union of their request sets, and  

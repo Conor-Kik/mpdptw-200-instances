@@ -30,9 +30,9 @@ For each combination of
 **(time-window type, request length, node count)**  
 five distinct instance variants are provided in the original benchmark, giving a total of:
 
-\[
-3 \times 2 \times 4 \times 5 = 120 \text{ instances.}
-\]
+$$
+3 \times 2 \times 4 \times 5 = 120\ \text{instances.}
+$$
 
 The 200-node instances in this repository are **synthetic extensions** of the original 100-node class.
 
@@ -50,16 +50,16 @@ To obtain larger test instances, we generated **synthetic 200-node datasets** by
 For each such class:
 
 1. Take the five original 100-node instances, denoted
-   \[
-   (f_0, f_1, f_2, f_3, f_4).
-   \]
+
+$$(f_0, f_1, f_2, f_3, f_4)$$
 
 2. Form a deterministic **5-cycle of pairs**:
-   - \((f_0, f_1)\)
-   - \((f_1, f_2)\)
-   - \((f_2, f_3)\)
-   - \((f_3, f_4)\)
-   - \((f_4, f_0)\)
+
+$(f_0, f_1)$  
+$(f_1, f_2)$  
+$(f_2, f_3)$  
+$(f_3, f_4)$  
+$(f_4, f_0)$
 
 3. For each pair, build a **single 200-node instance** by:
    - taking the union of their request sets, and  
